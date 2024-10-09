@@ -17,6 +17,10 @@ Public Class Form1
         '    ' OR 1=1 -- -
         '    ' OR 1=1; DELETE FROM tbluser;
         '    ' OR 1=1; DROP TABLE 
+        '    ' OR 1=1; DROP DATABASE dbuser;
+        '    ' OR 1=1; UPDATE tbluser SET passwd = 'newpassword' WHERE username = 'admin';
+
+        ' Any number of SQL statements could be injected once the dtaabase is vulnerable
 
         Dim query As String = "SELECT username, passwd FROM tbluser WHERE username = '" & enteredUsername & "' AND passwd = '" & enteredPassword & "'"
 
