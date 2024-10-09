@@ -34,7 +34,7 @@ Public Class Form1
 
         ' ----------------- SQL Protection 2 ----------------- (parameterised queries)
         ' SQL Query with parameters
-        ' Dim query As String = "SELECT * FROM tblUser WHERE username = @username AND password = @password"
+        ' Dim query As String = "SELECT * FROM tblUser WHERE username = @username AND password = @password LIMIT 1"
 
         ' Use of stored procedure with parameters to execute a query
         Dim query As String = "CALL sp_ValidateUser1(@username, @password)"
